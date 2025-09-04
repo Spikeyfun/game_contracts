@@ -1,0 +1,27 @@
+[package]
+#name = "spike_game_v2" #testnet
+name = "spike_game_two" #mainnet
+version = "1.0.0"
+authors = []
+
+[addresses]
+rps_addr = "0xfeff8d092002f46554aae4018d6c3ab055168d9782563c57c8b0557c7eb42426"
+IRON = "0xfeff8d092002f46554aae4018d6c3ab055168d9782563c57c8b0557c7eb42426"
+spikememe = "0x0fec116479f1fd3cb9732cc768e6061b0e45b178a610b9bc23c2143a6493e794"
+[dev-addresses]
+
+[dependencies.SupraFramework]
+git = "https://github.com/Entropy-Foundation/aptos-core.git"
+rev = "dev"
+subdir = "aptos-move/framework/supra-framework"
+
+[dependencies.SupraVrf]
+git = "https://github.com/SNABUR/vrf-interface.git"
+subdir = "supra/mainnet"
+rev = "master"
+
+[dependencies.memes_packages]
+git = "https://github.com/SNABUR/SpikeCoin.git"
+rev = "main"
+
+[dev-dependencies]
